@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZEN — Data Gate | Coming Soon</title>
+  <meta name="description" content="ZEN — Data Gate is a data-first gateway connecting Revit, ACC, and project information into one intelligent workflow." />
+  <style>
+    :root {
+      --zen-red: #c22a1f;
+      --zen-ink: #111111;
+      --zen-sand: #f2eee7;
+      --zen-stone: #d9d5ce;
+      --zen-accent: #3b6e4c;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #ffffff 0, var(--zen-sand) 55%, #e5e0d6 100%);
+      color: var(--zen-ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .page {
+      max-width: 960px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 24px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.03);
+      padding: 40px 28px 32px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .page { grid-template-columns: 1fr; padding: 28px 20px 24px; }
+    }
+
+    .mark { display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+
+    .torii-wrap { width: 120px; }
+    .torii { width: 100%; height: auto; display: block; }
+
+    .wordmark-main {
+      font-size: 2.4rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 600;
+    }
+    .wordmark-sub {
+      font-size: 0.95rem; letter-spacing: 0.36em; text-transform: uppercase; margin-top: 6px;
+      color: rgba(0, 0, 0, 0.7);
+    }
+
+    .tagline { font-size: 1rem; margin-top: 10px; color: rgba(0, 0, 0, 0.7); }
+
+    .content { display: flex; flex-direction: column; gap: 18px; justify-content: center; }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      border-radius: 999px; padding: 4px 10px 4px 6px;
+      background: rgba(194, 42, 31, 0.075); color: rgba(0, 0, 0, 0.7);
+      font-size: 0.8rem; width: fit-content;
+    }
+
+    .pill-dot {
+      width: 8px; height: 8px; border-radius: 999px; background: var(--zen-red);
+      box-shadow: 0 0 0 5px rgba(194, 42, 31, 0.18);
+    }
+
+    h1 { font-size: 1.7rem; font-weight: 600; line-height: 1.2; }
+    .lead { font-size: 0.98rem; color: rgba(0,0,0,0.78); line-height: 1.5; margin-top: 4px; }
+
+    .points { margin-top: 10px; display: grid; gap: 10px; font-size: 0.9rem; color: rgba(0,0,0,0.78); }
+    .point { display: flex; align-items: flex-start; gap: 8px; }
+    .point-icon { width: 7px; height: 7px; border-radius: 50%; margin-top: 6px; border: 1px solid rgba(0,0,0,0.5); }
+
+    .cta-row { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+
+    .btn {
+      border-radius: 999px; padding: 9px 18px; font-size: 0.9rem;
+      cursor: pointer; text-decoration: none; display: inline-flex;
+      align-items: center; justify-content: center; gap: 6px;
+      transition: transform 0.12s ease-out, box-shadow 0.12s ease-out, background 0.12s ease-out;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--zen-red); color: #ffffff;
+      box-shadow: 0 12px 25px rgba(194, 42, 31, 0.32);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 30px rgba(194, 42, 31, 0.4);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: rgba(0, 0, 0, 0.78);
+      border: 1px solid rgba(0,0,0,0.16);
+    }
+    .btn-ghost:hover {
+      background: rgba(0,0,0,0.03);
+      transform: translateY(-1px);
+    }
+
+    .footnote {
+      margin-top: 12px; font-size: 0.78rem;
+      color: rgba(0, 0, 0, 0.54);
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="mark">
+      <div class="torii-wrap">
+        <svg class="torii" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" stroke="none">
+            <rect x="8" y="16" width="104" height="10" fill="var(--zen-red)" rx="2" />
+            <rect x="20" y="28" width="80" height="7" fill="var(--zen-red)" rx="1.5" />
+            <rect x="24" y="35" width="10" height="36" fill="var(--zen-red)" rx="1.5" />
+            <rect x="86" y="35" width="10" height="36" fill="var(--zen-red)" rx="1.5" />
+            <rect x="36" y="35" width="8" height="16" fill="var(--zen-red)" />
+            <rect x="76" y="35" width="8" height="16" fill="var(--zen-red)" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="wordmark">
+        <div class="wordmark-main">ZEN</div>
+        <div class="wordmark-sub">DATA GATE</div>
+      </div>
+
+      <p class="tagline">The gateway to connected project information.</p>
+    </section>
+
+    <section class="content">
+      <div class="pill">
+        <span class="pill-dot"></span>
+        <span>Coming Soon — Private Beta 2026</span>
+      </div>
+
+      <header>
+        <h1>Data-first automation for Revit, ACC, and beyond.</h1>
+        <p class="lead">
+          ZEN — Data Gate connects models, metadata, and registries into one calm, automated flow.
+          Batch health checks, schedule exports, family analytics, and cloud workflows — all from a single, data-aware gateway.
+        </p>
+      </header>
+
+      <div class="points">
+        <div class="point">
+          <span class="point-icon"></span>
+          <p>Bridge Revit and ACC with a GUID-driven gateway designed for large federated projects.</p>
+        </div>
+        <div class="point">
+          <span class="point-icon"></span>
+          <p>Run model health, schedule exports, and registry sync in batch — without interrupting your daily work.</p>
+        </div>
+        <div class="point">
+          <span class="point-icon"></span>
+          <p><strong>Perform safe batch editing</strong> across multiple Revit cloud models using a controlled multi-session engine.</p>
+        </div>
+        <div class="point">
+          <span class="point-icon"></span>
+          <p>Retain full ownership of your data — ZEN reads from your existing CDE, it doesn’t replace it.</p>
+        </div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#">
+          Request early access
+        </a>
+        <a class="btn btn-ghost" href="#">
+          Follow updates on LinkedIn
+        </a>
+      </div>
+
+      <p class="footnote">
+        ZEN — Data Gate is an independent R&amp;D project currently in private testing.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
