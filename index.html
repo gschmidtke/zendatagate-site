@@ -153,6 +153,20 @@
       gap: 10px;
     }
 
+    /* New outline torii logo */
+
+    .torii-svg {
+      width: 130px;
+      height: auto;
+      color: var(--accent);
+    }
+
+    @media (max-width: 820px) {
+      .torii-svg {
+        width: 110px;
+      }
+    }
+
     .logo-text-main {
       font-size: 20px;
       letter-spacing: 0.35em;
@@ -310,24 +324,33 @@
       <!-- Left: Logo + caption -->
       <div class="hero-torii-block">
         <div class="logo-mark">
-          <!-- Thin-line Torii SVG logo (C1) -->
+          <!-- Outline Myojin torii SVG -->
           <svg
-            width="180"
-            height="110"
-            viewBox="0 0 180 110"
-            fill="none"
-            stroke="#e6392f"
-            stroke-width="4"
-            stroke-linecap="round"
+            class="torii-svg"
+            viewBox="0 0 120 100"
+            aria-hidden="true"
           >
-            <!-- Top beam -->
-            <line x1="15" y1="25" x2="165" y2="25" />
-            <!-- Second beam -->
-            <line x1="35" y1="40" x2="145" y2="40" />
-            <!-- Left post -->
-            <line x1="55" y1="40" x2="55" y2="95" />
-            <!-- Right post -->
-            <line x1="125" y1="40" x2="125" y2="95" />
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-width="5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <!-- Top beam (slight overhang) -->
+              <path d="M10 20 H110" />
+              <!-- Mid beam -->
+              <path d="M26 32 H94" />
+              <!-- Short drops from mid beam (inner posts) -->
+              <path d="M26 32 V40" />
+              <path d="M94 32 V40" />
+              <!-- Main legs -->
+              <path d="M38 40 V82" />
+              <path d="M82 40 V82" />
+              <!-- Base feet -->
+              <path d="M32 82 H44" />
+              <path d="M76 82 H88" />
+            </g>
           </svg>
 
           <div class="logo-text-main">ZEN</div>
