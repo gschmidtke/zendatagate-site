@@ -153,66 +153,6 @@
       gap: 10px;
     }
 
-    .torii {
-      width: 96px;
-      height: 64px;
-      position: relative;
-    }
-
-    .torii-bar {
-      position: absolute;
-      left: 0;
-      right: 0;
-      border-radius: 4px;
-      background: var(--accent);
-    }
-
-    .torii-bar.top {
-      height: 10px;
-      top: 6px;
-    }
-
-    .torii-bar.mid {
-      height: 6px;
-      top: 22px;
-      width: 82%;
-      margin: 0 auto;
-    }
-
-    .torii-leg {
-      position: absolute;
-      width: 12px;
-      border-radius: 8px;
-      background: var(--accent);
-      bottom: 6px;
-      top: 28px;
-    }
-
-    .torii-leg.left {
-      left: 20px;
-    }
-
-    .torii-leg.right {
-      right: 20px;
-    }
-
-    .torii-foot {
-      position: absolute;
-      width: 18px;
-      height: 5px;
-      border-radius: 999px;
-      background: var(--accent);
-      bottom: 2px;
-    }
-
-    .torii-foot.left {
-      left: 18px;
-    }
-
-    .torii-foot.right {
-      right: 18px;
-    }
-
     .logo-text-main {
       font-size: 20px;
       letter-spacing: 0.35em;
@@ -370,14 +310,26 @@
       <!-- Left: Logo + caption -->
       <div class="hero-torii-block">
         <div class="logo-mark">
-          <div class="torii" aria-hidden="true">
-            <div class="torii-bar top"></div>
-            <div class="torii-bar mid"></div>
-            <div class="torii-leg left"></div>
-            <div class="torii-leg right"></div>
-            <div class="torii-foot left"></div>
-            <div class="torii-foot right"></div>
-          </div>
+          <!-- Thin-line Torii SVG logo (C1) -->
+          <svg
+            width="180"
+            height="110"
+            viewBox="0 0 180 110"
+            fill="none"
+            stroke="#e6392f"
+            stroke-width="4"
+            stroke-linecap="round"
+          >
+            <!-- Top beam -->
+            <line x1="15" y1="25" x2="165" y2="25" />
+            <!-- Second beam -->
+            <line x1="35" y1="40" x2="145" y2="40" />
+            <!-- Left post -->
+            <line x1="55" y1="40" x2="55" y2="95" />
+            <!-- Right post -->
+            <line x1="125" y1="40" x2="125" y2="95" />
+          </svg>
+
           <div class="logo-text-main">ZEN</div>
           <div class="logo-text-sub">DATA GATE</div>
         </div>
