@@ -153,9 +153,9 @@
       gap: 10px;
     }
 
-    /* New SVG logo sizing */
+    /* NEW SVG TORII LOGO */
     .torii-svg {
-      width: 120px;   /* tweak 110–140px to taste */
+      width: 128px; /* adjust 110–150px to taste */
       height: auto;
       display: block;
     }
@@ -309,46 +309,71 @@
         gap: 6px;
       }
     }
+
   </style>
 </head>
+
 <body>
   <main class="page">
     <section class="hero-card">
-      <!-- Left: Logo + caption -->
+
+      <!-- LEFT: LOGO BLOCK -->
       <div class="hero-torii-block">
         <div class="logo-mark">
-          <!-- Hand-drawn style torii, thin lines -->
+
+          <!-- NEW SVG TORII LOGO -->
           <svg
             class="torii-svg"
             viewBox="0 0 140 120"
-            fill="none"
-            stroke="#E6392F"
-            stroke-width="3"
-            stroke-linecap="round"
-            stroke-linejoin="round"
             aria-hidden="true"
           >
-            <!-- Top curved beam -->
-            <path d="M10 28 Q70 6 130 28" />
-
-            <!-- Lower beam -->
-            <line x1="20" y1="46" x2="120" y2="46" />
-
-            <!-- Inner hanging sticks -->
-            <line x1="68" y1="46" x2="68" y2="62" />
-            <line x1="78" y1="46" x2="78" y2="62" />
-
-            <!-- Left vertical post -->
-            <line x1="30" y1="46" x2="30" y2="112" />
-
-            <!-- Right vertical post -->
-            <line x1="110" y1="46" x2="110" y2="112" />
-
-            <!-- Left side bracket -->
-            <line x1="30" y1="62" x2="15" y2="62" />
-
-            <!-- Right side bracket -->
-            <line x1="110" y1="62" x2="125" y2="62" />
+            <!-- top curved beam -->
+            <path
+              d="M15 25 C 45 10, 95 10, 125 25"
+              fill="none"
+              stroke="var(--accent)"
+              stroke-width="6"
+              stroke-linecap="round"
+            />
+            <!-- inner straight beam -->
+            <line
+              x1="20" y1="38"
+              x2="120" y2="38"
+              stroke="var(--accent)"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <!-- two inner posts -->
+            <line
+              x1="67" y1="38"
+              x2="67" y2="48"
+              stroke="var(--accent)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <line
+              x1="73" y1="38"
+              x2="73" y2="48"
+              stroke="var(--accent)"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+            <!-- left leg -->
+            <line
+              x1="35" y1="38"
+              x2="35" y2="98"
+              stroke="var(--accent)"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
+            <!-- right leg -->
+            <line
+              x1="105" y1="38"
+              x2="105" y2="98"
+              stroke="var(--accent)"
+              stroke-width="5"
+              stroke-linecap="round"
+            />
           </svg>
 
           <div class="logo-text-main">ZEN</div>
@@ -356,11 +381,12 @@
         </div>
 
         <p class="hero-caption">
-          The gateway to connected project information. Data-aware automation for Revit, ACC, and complex federated work.
+          The gateway to connected project information. Data-aware automation for Revit, ACC, and complex
+          federated work.
         </p>
       </div>
 
-      <!-- Right: Text only, no CTA -->
+      <!-- RIGHT SIDE -->
       <div class="hero-layout">
         <div class="hero-badge-row">
           <div class="hero-chip">
@@ -378,25 +404,19 @@
         </h1>
 
         <p class="hero-sub">
-          ZEN — Data Gate connects models, metadata, and registries into one calm, automated flow. Batch model health checks,
-          schedule exports, library analytics, and cloud workflows — all from a single, GUID-aware gateway.
+          ZEN — Data Gate connects models, metadata, and registries into one calm, automated flow. Batch model
+          health checks, schedule exports, library analytics, and cloud workflows — all from a single, GUID-aware gateway.
         </p>
 
         <ul class="hero-list">
-          <li>
-            <span>Bridge Revit and ACC</span> with a GUID-aware gateway designed for large federated projects.
-          </li>
-          <li>
-            <span>Centralize project registries</span> so sheets, links, worksets, and families can be reasoned about together.
-          </li>
-          <li>
-            <span>Explore batch automation</span> across multiple Revit cloud models using a controlled multi-session engine.
-          </li>
+          <li><span>Bridge Revit and ACC</span> with a GUID-aware gateway designed for large federated projects.</li>
+          <li><span>Centralize project registries</span> so sheets, links, worksets, and families can be reasoned about together.</li>
+          <li><span>Explore batch automation</span> across multiple Revit cloud models using a controlled multi-session engine.</li>
         </ul>
       </div>
     </section>
 
-    <!-- What ZEN does (high level, no CTAs) -->
+    <!-- WHAT ZEN EXPLORES -->
     <section class="section">
       <div class="section-kicker">What ZEN explores</div>
       <h2 class="section-title">One gateway, three core ideas.</h2>
@@ -447,11 +467,10 @@
       <div>© 2025 ZEN — Data Gate. All rights reserved. Independent R&amp;D project.</div>
       <div>
         Quiet prototype by Gottfried Schmidtke.
-        <a class="footer-link" href="#" target="_blank" rel="noopener noreferrer">
-          LinkedIn
-        </a>
+        <a class="footer-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </footer>
+
   </main>
 </body>
 </html>
