@@ -8,7 +8,6 @@
     name="description"
     content="ZEN — Data Gate is a private R&D project exploring data-first automation for Revit, ACC, and federated BIM workflows."
   />
-
   <style>
     :root {
       --bg: #f5eee7;
@@ -25,12 +24,6 @@
       --shadow-soft: 0 22px 55px rgba(32, 17, 6, 0.10);
       --radius-xl: 28px;
       --radius-pill: 999px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
     }
 
     body {
@@ -59,91 +52,9 @@
       gap: 32px;
     }
 
-    @media (max-width: 820px) {
-      body {
-        padding: 24px 12px 40px;
-      }
-
-      .hero-card {
-        grid-template-columns: 1fr;
-        padding: 24px 20px 28px;
-        border-radius: 22px;
-      }
-    }
-
-    .hero-badge-row {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .hero-chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 11px;
-      border-radius: 999px;
-      font-size: 11px;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      border: 1px solid var(--chip-border);
-      background: var(--chip-bg);
-      color: #8a5a41;
-      font-weight: 600;
-    }
-
-    .hero-chip-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: #f05b4f;
-      box-shadow: 0 0 0 4px rgba(240, 91, 79, 0.25);
-    }
-
-    .hero-chip-subtle {
-      font-size: 11px;
-      color: var(--text-muted);
-    }
-
-    .hero-layout {
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .hero-heading {
-      font-size: 26px;
-      line-height: 1.18;
-      letter-spacing: -0.03em;
-      margin-bottom: 12px;
-    }
-
-    .hero-sub {
-      font-size: 14px;
-      color: var(--text-muted);
-      max-width: 440px;
-    }
-
-    .hero-list {
-      margin-top: 18px;
-      font-size: 13px;
-      color: var(--text-main);
-      list-style: none;
-    }
-
-    .hero-list li {
-      margin-bottom: 6px;
-    }
-
-    .hero-list span {
-      font-weight: 600;
-    }
-
     .hero-torii-block {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       gap: 16px;
     }
 
@@ -153,9 +64,8 @@
       gap: 10px;
     }
 
-    /* NEW SVG TORII LOGO */
     .torii-svg {
-      width: 128px; /* adjust 110–150px to taste */
+      width: 128px;
       height: auto;
       display: block;
     }
@@ -182,6 +92,66 @@
       max-width: 280px;
     }
 
+    .hero-badge-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      font-size: 11px;
+      text-transform: uppercase;
+      border: 1px solid var(--chip-border);
+      background: var(--chip-bg);
+      color: #8a5a41;
+      font-weight: 600;
+    }
+
+    .hero-chip-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #f05b4f;
+      box-shadow: 0 0 0 4px rgba(240, 91, 79, 0.25);
+    }
+
+    .hero-chip-subtle {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    .hero-heading {
+      font-size: 26px;
+      margin-bottom: 12px;
+      line-height: 1.18;
+      letter-spacing: -0.03em;
+    }
+
+    .hero-sub {
+      font-size: 14px;
+      color: var(--text-muted);
+      max-width: 440px;
+    }
+
+    .hero-list {
+      margin-top: 18px;
+      list-style: none;
+      font-size: 13px;
+    }
+
+    .hero-list li {
+      margin-bottom: 6px;
+    }
+
+    .hero-list span {
+      font-weight: 600;
+    }
+
     .section {
       margin-top: 40px;
     }
@@ -196,8 +166,8 @@
 
     .section-title {
       font-size: 18px;
-      letter-spacing: -0.03em;
       margin-bottom: 18px;
+      letter-spacing: -0.03em;
     }
 
     .feature-grid {
@@ -206,29 +176,20 @@
       gap: 18px;
     }
 
-    @media (max-width: 820px) {
-      .feature-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
     .feature-card {
       background: var(--card);
       border-radius: 18px;
-      padding: 16px 16px 18px;
+      padding: 16px;
       border: 1px solid var(--border-subtle);
     }
 
     .feature-tag {
-      display: inline-flex;
+      font-size: 10px;
       padding: 4px 9px;
       border-radius: var(--radius-pill);
       border: 1px solid var(--pill-border);
       background: var(--pill-bg);
-      font-size: 10px;
       text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: #8a5a41;
       margin-bottom: 8px;
     }
 
@@ -246,36 +207,30 @@
 
     .footer-note {
       margin-top: 26px;
-      padding: 12px 18px;
+      padding: 12px;
       border-radius: 14px;
       border: 1px dashed var(--border-subtle);
       background: rgba(255, 255, 255, 0.78);
       font-size: 11px;
       color: var(--text-muted);
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       gap: 8px;
-    }
-
-    .footer-note span {
-      font-weight: 500;
-      color: #5a4c43;
+      flex-wrap: wrap;
     }
 
     .pill-row {
       display: flex;
-      flex-wrap: wrap;
       gap: 8px;
+      flex-wrap: wrap;
       margin-top: 10px;
     }
 
     .pill {
-      border-radius: var(--radius-pill);
       padding: 4px 10px;
-      font-size: 11px;
+      border-radius: var(--radius-pill);
       border: 1px solid var(--pill-border);
       background: var(--pill-bg);
+      font-size: 11px;
       color: #6b5a4f;
       white-space: nowrap;
     }
@@ -285,29 +240,9 @@
       font-size: 11px;
       color: var(--text-muted);
       display: flex;
+      justify-content: space-between;
       flex-wrap: wrap;
       gap: 4px;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-link {
-      color: #857569;
-      text-decoration: none;
-      border-bottom: 1px dotted rgba(133, 117, 105, 0.4);
-    }
-
-    .footer-link:hover {
-      color: #5b4b40;
-      border-bottom-style: solid;
-    }
-
-    @media (max-width: 640px) {
-      .page-footer {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-      }
     }
 
   </style>
@@ -316,64 +251,33 @@
 <body>
   <main class="page">
     <section class="hero-card">
-
-      <!-- LEFT: LOGO BLOCK -->
       <div class="hero-torii-block">
         <div class="logo-mark">
 
-          <!-- NEW SVG TORII LOGO -->
-          <svg
-            class="torii-svg"
-            viewBox="0 0 140 120"
-            aria-hidden="true"
-          >
-            <!-- top curved beam -->
-            <path
-              d="M15 25 C 45 10, 95 10, 125 25"
-              fill="none"
-              stroke="var(--accent)"
-              stroke-width="6"
-              stroke-linecap="round"
-            />
-            <!-- inner straight beam -->
-            <line
-              x1="20" y1="38"
-              x2="120" y2="38"
-              stroke="var(--accent)"
-              stroke-width="5"
-              stroke-linecap="round"
-            />
-            <!-- two inner posts -->
-            <line
-              x1="67" y1="38"
-              x2="67" y2="48"
-              stroke="var(--accent)"
-              stroke-width="4"
-              stroke-linecap="round"
-            />
-            <line
-              x1="73" y1="38"
-              x2="73" y2="48"
-              stroke="var(--accent)"
-              stroke-width="4"
-              stroke-linecap="round"
-            />
-            <!-- left leg -->
-            <line
-              x1="35" y1="38"
-              x2="35" y2="98"
-              stroke="var(--accent)"
-              stroke-width="5"
-              stroke-linecap="round"
-            />
-            <!-- right leg -->
-            <line
-              x1="105" y1="38"
-              x2="105" y2="98"
-              stroke="var(--accent)"
-              stroke-width="5"
-              stroke-linecap="round"
-            />
+          <!-- ⭐ NEW HAND-DRAWN TORII SVG -->
+          <svg class="torii-svg" viewBox="0 0 200 140" fill="none" stroke="#e6392f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+            <!-- Curved top beam -->
+            <path d="M20 25 
+                     C 60 5, 140 5, 180 25 
+                     C 140 15, 60 15, 20 25" />
+
+            <!-- Horizontal beam -->
+            <path d="M35 50 L165 50 
+                     M35 53 L165 53" stroke-width="4" />
+
+            <!-- Hanging ornaments -->
+            <line x1="98" y1="50" x2="98" y2="65" stroke-width="4" />
+            <line x1="104" y1="50" x2="104" y2="65" stroke-width="4" />
+
+            <!-- Left post -->
+            <path d="M40 50 
+                     L40 120 
+                     C40 125, 42 130, 44 133" />
+
+            <!-- Right post -->
+            <path d="M160 50 
+                     L160 120 
+                     C160 125, 158 130, 156 133" />
           </svg>
 
           <div class="logo-text-main">ZEN</div>
@@ -381,42 +285,32 @@
         </div>
 
         <p class="hero-caption">
-          The gateway to connected project information. Data-aware automation for Revit, ACC, and complex
-          federated work.
+          The gateway to connected project information. Data-aware automation for Revit, ACC, and complex federated work.
         </p>
       </div>
 
-      <!-- RIGHT SIDE -->
       <div class="hero-layout">
         <div class="hero-badge-row">
-          <div class="hero-chip">
-            <span class="hero-chip-dot"></span>
-            Private beta — invitation only
-          </div>
-          <div class="hero-chip-subtle">
-            Quiet R&amp;D prototype, 2024–2025.
-          </div>
+          <div class="hero-chip"><span class="hero-chip-dot"></span> Private beta — invitation only</div>
+          <div class="hero-chip-subtle">Quiet R&D prototype, 2024–2025.</div>
         </div>
 
         <h1 class="hero-heading">
-          Data-first automation for Revit,<br />
-          ACC, and beyond.
+          Data-first automation for Revit,<br>ACC, and beyond.
         </h1>
 
         <p class="hero-sub">
-          ZEN — Data Gate connects models, metadata, and registries into one calm, automated flow. Batch model
-          health checks, schedule exports, library analytics, and cloud workflows — all from a single, GUID-aware gateway.
+          ZEN — Data Gate connects models, metadata, and registries into one calm, automated flow.
         </p>
 
         <ul class="hero-list">
-          <li><span>Bridge Revit and ACC</span> with a GUID-aware gateway designed for large federated projects.</li>
-          <li><span>Centralize project registries</span> so sheets, links, worksets, and families can be reasoned about together.</li>
-          <li><span>Explore batch automation</span> across multiple Revit cloud models using a controlled multi-session engine.</li>
+          <li><span>Bridge Revit and ACC</span> with a GUID-aware gateway.</li>
+          <li><span>Centralize project registries</span> for sheets, links, worksets, families.</li>
+          <li><span>Explore batch automation</span> across Revit cloud models.</li>
         </ul>
       </div>
     </section>
 
-    <!-- WHAT ZEN EXPLORES -->
     <section class="section">
       <div class="section-kicker">What ZEN explores</div>
       <h2 class="section-title">One gateway, three core ideas.</h2>
@@ -424,51 +318,41 @@
       <div class="feature-grid">
         <article class="feature-card">
           <div class="feature-tag">GUID-aware gateway</div>
-          <h3 class="feature-title">ACC &amp; Revit in one story.</h3>
+          <h3 class="feature-title">ACC & Revit in one story.</h3>
           <p class="feature-body">
-            ZEN reads from ACC registries, link matrices, and model lists, then opens the right cloud models with a GUID-driven
-            engine. No more manual “which RVT is where?” detective work.
+            ZEN reads ACC registries, link matrices, and model lists, then opens the correct cloud models with a GUID-driven engine.
           </p>
         </article>
 
         <article class="feature-card">
           <div class="feature-tag">Batch automation</div>
-          <h3 class="feature-title">Health checks &amp; exports from one place.</h3>
+          <h3 class="feature-title">Health checks & exports.</h3>
           <p class="feature-body">
-            Schedule model health checks, sheet and schedule exports, and analytics across dozens of models. Designed for
-            overnight batch runs rather than manual daily clicking.
+            Schedule automated model health checks and exports.
           </p>
         </article>
 
         <article class="feature-card">
           <div class="feature-tag">Data discipline</div>
-          <h3 class="feature-title">Registries as a source of truth.</h3>
+          <h3 class="feature-title">Registries as truth.</h3>
           <p class="feature-body">
-            Treat registries — sheets, links, worksets, families — as first-class citizens. ZEN treats Excel and the CDE as
-            auditable, reviewable sources for project decisions.
+            Treat Excel and the CDE as auditable, reviewable sources for project decisions.
           </p>
         </article>
       </div>
 
-      <div class="footer-note">
-        <span>Built for BIM teams who care about their data as much as their drawings.</span>
-        <span>Public launch is not planned; this work remains a quiet prototype while options are explored.</span>
-      </div>
+      <div class="footer-note">Built for BIM teams who care about their data.</div>
 
       <div class="pill-row">
-        <div class="pill">BIM &amp; Digital Practice</div>
-        <div class="pill">Themed Entertainment &amp; Complex Attractions</div>
-        <div class="pill">Multi-vendor ACC-based projects</div>
-        <div class="pill">Revit &amp; ACC automation experiments</div>
+        <div class="pill">BIM & Digital Practice</div>
+        <div class="pill">Complex Attractions</div>
+        <div class="pill">ACC projects</div>
       </div>
     </section>
 
     <footer class="page-footer">
-      <div>© 2025 ZEN — Data Gate. All rights reserved. Independent R&amp;D project.</div>
-      <div>
-        Quiet prototype by Gottfried Schmidtke.
-        <a class="footer-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </div>
+      <div>© 2025 ZEN — Data Gate. Independent R&D.</div>
+      <div>Prototype by Gottfried Schmidtke.</div>
     </footer>
 
   </main>
