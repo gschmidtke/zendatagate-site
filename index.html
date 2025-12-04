@@ -150,14 +150,14 @@
     .logo-mark {
       display: inline-flex;
       flex-direction: column;
-      gap: 12px;
-      align-items: flex-start;
+      gap: 10px;
     }
 
+    /* New SVG logo sizing */
     .torii-svg {
-      width: 120px;
+      width: 120px;   /* tweak 110–140px to taste */
       height: auto;
-      color: var(--accent);
+      display: block;
     }
 
     .logo-text-main {
@@ -317,33 +317,38 @@
       <!-- Left: Logo + caption -->
       <div class="hero-torii-block">
         <div class="logo-mark">
-          <!-- New torii logo SVG based on your sketch -->
+          <!-- Hand-drawn style torii, thin lines -->
           <svg
             class="torii-svg"
-            viewBox="0 0 120 110"
+            viewBox="0 0 140 120"
+            fill="none"
+            stroke="#E6392F"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
             aria-hidden="true"
           >
-            <g
-              fill="none"
-              stroke="currentColor"
-              stroke-width="4.2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <!-- Curved top beam -->
-              <path d="M10 20 C40 5, 80 5, 110 20" />
-              <!-- Second beam -->
-              <path d="M18 34 C40 28, 80 28, 102 34" />
-              <!-- Inner drops -->
-              <path d="M55 34 V45" />
-              <path d="M65 34 V45" />
-              <!-- Crossbars on legs -->
-              <path d="M25 52 H40" />
-              <path d="M80 52 H95" />
-              <!-- Legs -->
-              <path d="M28 34 V95" />
-              <path d="M92 34 V95" />
-            </g>
+            <!-- Top curved beam -->
+            <path d="M10 28 Q70 6 130 28" />
+
+            <!-- Lower beam -->
+            <line x1="20" y1="46" x2="120" y2="46" />
+
+            <!-- Inner hanging sticks -->
+            <line x1="68" y1="46" x2="68" y2="62" />
+            <line x1="78" y1="46" x2="78" y2="62" />
+
+            <!-- Left vertical post -->
+            <line x1="30" y1="46" x2="30" y2="112" />
+
+            <!-- Right vertical post -->
+            <line x1="110" y1="46" x2="110" y2="112" />
+
+            <!-- Left side bracket -->
+            <line x1="30" y1="62" x2="15" y2="62" />
+
+            <!-- Right side bracket -->
+            <line x1="110" y1="62" x2="125" y2="62" />
           </svg>
 
           <div class="logo-text-main">ZEN</div>
