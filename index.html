@@ -101,8 +101,6 @@
       }
     }
 
-    /* Header / Brand */
-
     .brand-row {
       display: flex;
       align-items: center;
@@ -195,8 +193,6 @@
       box-shadow: 0 0 8px rgba(34, 197, 94, 0.9);
     }
 
-    /* Hero text */
-
     .hero-title {
       font-size: 2.05rem;
       line-height: 1.12;
@@ -233,8 +229,6 @@
       color: var(--text-main);
       font-weight: 500;
     }
-
-    /* Buttons */
 
     .hero-actions {
       display: flex;
@@ -284,8 +278,6 @@
       background: rgba(148, 163, 184, 0.9);
     }
 
-    /* Hero footnotes */
-
     .hero-footnotes {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -314,8 +306,6 @@
       color: rgba(148, 163, 184, 0.95);
       flex-shrink: 0;
     }
-
-    /* Right column: cards */
 
     .panel-grid {
       display: grid;
@@ -403,8 +393,6 @@
       background: rgba(148, 163, 184, 0.9);
     }
 
-    /* Footer */
-
     .footnote-bottom {
       margin-top: 10px;
       font-size: 0.7rem;
@@ -422,7 +410,6 @@
   <main class="page">
     <section class="shell">
       <div class="layout">
-        <!-- LEFT: HERO -->
         <div>
           <div class="brand-row">
             <div class="brand-left">
@@ -488,8 +475,9 @@
           </p>
         </div>
 
-        <!-- RIGHT: FEATURE CARDS -->
         <div id="features" class="panel-grid">
+
+          <!-- CARD 1 WITH NEW SUMMARY -->
           <article class="card">
             <div class="card-pill">
               <span class="card-pill-dot"></span>
@@ -501,9 +489,13 @@
               ZEN helps you bring the correct project models into focus and run the actions you
               need — in a single, calm flow.
             </p>
+            <p class="card-highlight">
+              You choose the action — ZEN brings the right models forward.
+            </p>
             <div class="card-accent-band"></div>
           </article>
 
+          <!-- CARD 2 WITH NEW SUMMARY -->
           <article class="card">
             <span class="card-badge">Overview</span>
             <div class="card-tag">Project awareness</div>
@@ -513,8 +505,12 @@
               models are part of a project, how they relate, and where attention is needed,
               without exposing internal plumbing or low-level complexity.
             </p>
+            <p class="card-highlight">
+              Clarity at a glance, without digging into structure or internals.
+            </p>
           </article>
 
+          <!-- CARD 3 -->
           <article class="card">
             <div class="card-tag">Batch discipline</div>
             <h2 class="card-heading">Consistent batch processes</h2>
@@ -528,6 +524,7 @@
             </p>
           </article>
 
+          <!-- CARD 4 -->
           <article class="card">
             <div class="card-tag">Zen mindset</div>
             <h2 class="card-heading">Clarity instead of noise</h2>
@@ -540,6 +537,7 @@
               You stay in command. ZEN handles the background routine.
             </p>
           </article>
+
         </div>
       </div>
     </section>
